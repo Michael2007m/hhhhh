@@ -65,7 +65,15 @@ h1 {
     font-size: 2.5em;
     
 }
-
+.container {
+    width: 800px; /* Fixed width for the article container */
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: auto; /* Automatically adds space on the left */
+    margin-right: 0;   /* Keeps the container aligned to the right */
+}
 article h2, article h3 {
     color: #444;
     margin-bottom: 10px;
