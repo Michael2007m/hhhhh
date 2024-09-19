@@ -5,24 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        document.querySelector('.menu').addEventListener('click', function() {
+          this.classList.toggle('open');
+        });
+      </script>
 </head>
 <body>
-    <h1 id="name"> Portfolio</h1>
-    <div id = "navbar">
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Me</a></li>
-            <li><a href="">Contacts</a></li>
-            <li><a href="">Services</a></li>
-        </ul>
+    <div class="menu" onclick="this.classList.toggle('open')">
+        <div class="button"></div>
+        <div class="button"></div>
+        <div class="button"></div>
     </div>
-
-    <div id = "obsach">
-        <article>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam similique tempora odio nemo magni ullam commodi, reiciendis est esse iure inventore quis architecto. Repudiandae ab et dicta illo nam soluta?</p>
-        </article>
-    </div>
-
-
 </body>
 </html>
