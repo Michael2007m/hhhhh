@@ -1,21 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="index.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script>
-        document.querySelector('.menu').addEventListener('click', function() {
-          this.classList.toggle('open');
-        });
-      </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>website in progress</title>
+  <link rel="stylesheet" href="homepage.css">
+  
 </head>
 <body>
-    <div class="menu" onclick="this.classList.toggle('open')">
-        <div class="button"></div>
-        <div class="button"></div>
-        <div class="button"></div>
+
+  <!-- Header Section -->
+  <header>
+    <aside>
+      <h1>2M</h1>
+    </aside>
+    <p>Michael Micin - 2M</p>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#success-stories">Hobbies</a>
+      <a href="/ukol/formular.html">Contact Me</a>
+      <a class ="ukol" href="/ukol/uctenka.html">uctenka</a>
+      <button id="donateBtn">Donate</button>
+      <a class = "ukol" href="/ukol/los.html">los</a>
+      <a class = "ukol" href="/ukol/formular.html" >Services</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div>
+        <h2>Your Vision, My Expression</h2>
+        <br>
+        <h3>design is not finished yet</h3>
+      </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <article class="success-stories" id="success-stories">
+      <section>
+        <h2>Hobbies</h2>
+      </section>
+      <div class="project-container">
+        <button class="arrow left-arrow">&#9664;</button>
+        <section class="project active">
+          <img src="project1.jpg" alt="Project 1">
+          <h3>IT</h3>
+          <p>This project showcases our expertise in bringing ideas to life.</p>
+        </section>
+        <section class="project">
+          <img src="project2.jpg" alt="Project 2">
+          <h3>Basket</h3>
+          <p>Another example of a successful collaboration with our clients.</p>
+        </section>
+        <section class="project">
+          <figure>
+            <img src="/obrazky/imgg.jpg" alt="Project 3">
+            <figcaption>Fig.1 - basket</figcaption>
+          </figure>
+          <h3>Gym</h3>
+          <p>Delivering excellence in every phase of the project.</p>
+        </section>
+        <button class="arrow right-arrow">&#9654;</button>
+      </div>
+    </article>
+
+    <!-- Contact Section -->
+    <article class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-details">
+        <p>Email: info@website.com</p>
+        <p>Phone: +123 456 789</p>
+        <p>Address: 123 Success Lane, Dream City</p>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Your Website. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Modal -->
+  <div id="donate-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>uuuuuuuuuuuuuuuuuu</p>
     </div>
+  </div>
+
+  <!-- JavaScript for Modal and Project Navigation -->
+ 
+
+
+  <script src="homepage.js"></script>
 </body>
 </html>
